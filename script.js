@@ -1,5 +1,5 @@
 // creating a rock paper scissors game
-
+// iterates over the three possible moves Comp can make
 const moves = ["Rock","Paper","Scissors"];
 let playerScore = 0;
 let computerScore = 0;
@@ -21,7 +21,7 @@ function playRound(playerSelection, computerSelection) {
   else (playerSelection.toLowerCase() == computerSelection) 
     return 'You tied. ' + playerSelection + ' is the same as ' + computerSelection.toLowerCase(); 
 } 
-
+// function for a game to be played
 function game() {
   const playerSelection = prompt("Rock, Paper, or Scissors? ").toLowerCase();
   const computerSelection = computerPlay();
@@ -30,6 +30,7 @@ function game() {
       + 'So the current score is Player: ' + playerScore + ' and Computer: ' + computerScore + '.'  
 }
 
+console.log(game())
 console.log(game())
 console.log(game())
 console.log(game())
